@@ -24,6 +24,12 @@ file(GLOB SRC_FILES *.c *.cpp)
      
 add_executable( glfw-project WIN32 ${HEADER_FILES} ${SRC_FILES})
 
+target_compile_definitions(
+    glfw-project 
+  PRIVATE 
+    -DPROJECT_ROOT_DIR="${CMAKE_CURRENT_SOURCE_DIR}"
+    -DPROJECT_NAME_STR="glfw-project")
+
 target_link_libraries( glfw-project ${OPENGL_LIBRARIES} glfw )
 
 #

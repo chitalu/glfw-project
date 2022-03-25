@@ -1,4 +1,4 @@
-# GLFW Project
+# GLFW Project and GLM
 
 This starter project shows how to use CMake to create a project with GLFW. The code is multi-platform and runs on Windows, Linux and MacOS.
 
@@ -23,7 +23,7 @@ cd glfw-project
 
 Alternatively you can use a git GUI program such as [Fork](https://git-fork.com/) to get the code. Most of these will automatically download the git submodules.
 
-If you download the code from GitHub via the "Download ZIP" approach, you'll also need to download GLFW and GLM into the _glfw_ folder. The correct version can be found by clicking on the _glfw_  _glm_ folder you see on the [front page](https://github.com/chitalu/glfw-project.git) of the _glfw-project_ GitHub repository.
+If you download the code from GitHub via the "Download ZIP" approach, you'll also need to download GLFW and GLM into the _glfw_ folder. The correct version can be found by clicking on the _glfw_ and _glm_ folders you see on the [front page](https://github.com/chitalu/glfw-project.git) of the _glfw-project_ GitHub repository.
 
 ## Using CMake to create the project
 
