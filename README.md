@@ -10,7 +10,7 @@ GLFW on GitHub: [github.com/glfw/glfw](https://www.github.com/glfw/glfw)
 The easiest way to get hold of the starter code is to run the following command using a shell you can run git from:
 
 ```
-git clone --recursive TODO:add link
+git clone --recursive https://github.com/chitalu/glfw-project.git
 ```
 
 If you are on Windows you can download git from [git-scm.com/download/win](https://git-scm.com/download/win) and use the right click menu in Windows File Explorer to "Git Bash here" and then run git commands.
