@@ -23,7 +23,7 @@ cd glfw-project
 
 Alternatively you can use a git GUI program such as [Fork](https://git-fork.com/) to get the code. Most of these will automatically download the git submodules.
 
-If you download the code from GitHub via the "Download ZIP" approach, you'll also need to download GLFW into the _glfw_ folder. The correct version can be found by clicking on the _glfw_ folder you see on the [front page of the _glfw-project_ GitHub repository](https://github.com/chitalu/glfw-project.git).
+If you download the code from GitHub via the "Download ZIP" approach, you'll also need to download GLFW and GLM into the _glfw_ folder. The correct version can be found by clicking on the _glfw_  _glm_ folder you see on the [front page](https://github.com/chitalu/glfw-project.git) of the _glfw-project_ GitHub repository.
 
 ## Using CMake to create the project
 
