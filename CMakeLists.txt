@@ -35,7 +35,7 @@ target_link_libraries( glfw-project ${OPENGL_LIBRARIES} glfw )
 #
 # add extra include directories e.g. "glm" here
 #
-target_include_directories(glfw-project PRIVATE extern/glm)
+target_include_directories(glfw-project PRIVATE extern/glm ${CMAKE_CURRENT_SOURCE_DIR})
 
 if( MSVC )
     if(${CMAKE_VERSION} VERSION_LESS "3.6.0") 
