@@ -17,18 +17,19 @@ if( MSVC )
     SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /ENTRY:mainCRTStartup" )
 endif()
 
-set( GLFW-PROJECT-SRC
-     main.cpp
-     )
+set(CMAKE_CXX_STANDARD 11)  
+
+file(GLOB HEADER_FILES *.h)
+file(GLOB SRC_FILES *.c *.cpp)
      
-add_executable( glfw-project WIN32 ${GLFW-PROJECT-SRC} )
+add_executable( glfw-project WIN32 ${HEADER_FILES} ${SRC_FILES})
 
 target_link_libraries( glfw-project ${OPENGL_LIBRARIES} glfw )
 
 #
-# TODO: add extra include directories e.g. for "glm" here
+# add extra include directories e.g. "glm" here
 #
-# target_include_directories(glfw-project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/)
+target_include_directories(glfw-project PRIVATE extern/glm)
 
 if( MSVC )
     if(${CMAKE_VERSION} VERSION_LESS "3.6.0") 
